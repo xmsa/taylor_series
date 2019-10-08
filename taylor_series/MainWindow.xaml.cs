@@ -104,7 +104,7 @@ namespace taylor_series
 
                 double a = X, c = 1, b = 1, sum = X;
 
-                for (int i = 1; i <= N; i++)
+                for (int i = 1; i < N; i++)
                 {
                     a *= X * X;
                     b *= ((2 * i) * (2 * i + 1));
@@ -119,7 +119,31 @@ namespace taylor_series
 
         private void Btn_Cos_Click(object sender, RoutedEventArgs e)
         {
+            double X = 0;
+            double N = 0;
+            bool x = get_value(txt_X, ref X);
+            bool n = get_value(txt_N, ref N);
+            if (x && n)
+            {
+                // sun ( (-1)^n x^(2n) / (2n)! )
+                // a = x^(2n)
+                // b = (2n)!
+                // c = (-1)^n 
+                // sun ((ca)/b) 
 
+                double a = 1, c = 1, b = 1, sum = 1;
+
+                for (int i = 1; i < N; i++)
+                {
+                    a *= X * X;
+                    b *= ((2 * i) * (2 * i - 1));
+                    c *= -1;
+                    sum += ((a * c) / b);
+                }
+
+                MessageBox.Show(sum.ToString());
+
+            }
         }
 
         private void Btn_arcSin_Click(object sender, RoutedEventArgs e)
