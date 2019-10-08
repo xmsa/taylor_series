@@ -63,7 +63,29 @@ namespace taylor_series
 
         private void Btn_Pi_Click(object sender, RoutedEventArgs e)
         {
+            double N = 0;
 
+            bool n = get_value(txt_N, ref N);
+
+            if (n)
+            {
+                // sun ( 4*(-1)^n / (2n+1) )
+                // a = 4 * (-1)^n
+                // b = (2n+1)
+                // sun = (a/b) 
+
+                double a = 4, b = 1, sum = 4;
+
+                for (int i = 1; i < N; i++)
+                {
+                    a *= -1;
+                    b += 2;
+                    sum += a / b;
+                }
+
+                MessageBox.Show(sum.ToString());
+
+            }
         }
 
         private void Btn_Sin_Click(object sender, RoutedEventArgs e)
