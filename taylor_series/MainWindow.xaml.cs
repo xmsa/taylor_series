@@ -84,5 +84,21 @@ namespace taylor_series
         {
 
         }
+
+        bool get_value(TextBox txt, ref double val)
+        {
+
+            try
+            {
+                val = Convert.ToDouble(txt.Text);
+                return true;
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Type Value Error ( " + txt.Name[4] + " )", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
     }
 }
