@@ -18,13 +18,13 @@
         <Button x:Name="btn_Pi" Content="Pi" HorizontalAlignment="Left" Margin="112.8,42.072,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" TabIndex="4" Click="Btn_Pi_Click"/>
         <Button x:Name="btn_Sin" Content="Sin (x)" HorizontalAlignment="Left" Margin="10,80.232,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" TabIndex="5" Click="Btn_Sin_Click"/>
         <Button x:Name="btn_Cos" Content="Cos (x)" HorizontalAlignment="Left" Margin="112.8,80.232,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" TabIndex="6" Click="Btn_Cos_Click"/>
-        <Button x:Name="btn_arcSin" Content="arcSin (x)" HorizontalAlignment="Left" Margin="10,118.392,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
-        <Button x:Name="btn_arcCos" Content="arcCos (x)" HorizontalAlignment="Left" Margin="112.8,118.392,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
-        <Button x:Name="btn_arcTan" Content="arcTan (x)" HorizontalAlignment="Left" Margin="10,156.552,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
-        <Button x:Name="btn_Sinh" Content="Sinh (x)" HorizontalAlignment="Left" Margin="10,194.712,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
-        <Button x:Name="btn_Cosh" Content="Cosh (x)" HorizontalAlignment="Left" Margin="112.8,194.712,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
-        <Button x:Name="btn_arcSinh" Content="arcSinh (x)" HorizontalAlignment="Left" Margin="10,232.872,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
-        <Button x:Name="btn_arcTanh" Content="arcTanh (x)" HorizontalAlignment="Left" Margin="112.8,232.872,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
+        <Button x:Name="btn_arcSin" Content="arcSin (x)" HorizontalAlignment="Left" Margin="10,118.392,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" Click="Btn_arcSin_Click"/>
+        <Button x:Name="btn_arcCos" Content="arcCos (x)" HorizontalAlignment="Left" Margin="112.8,118.392,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" Click="Btn_arcCos_Click"/>
+        <Button x:Name="btn_arcTan" Content="arcTan (x)" HorizontalAlignment="Left" Margin="10,156.552,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" Click="Btn_arcTan_Click"/>
+        <Button x:Name="btn_Sinh" Content="Sinh (x)" HorizontalAlignment="Left" Margin="10,194.712,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" Click="Btn_Sinh_Click"/>
+        <Button x:Name="btn_Cosh" Content="Cosh (x)" HorizontalAlignment="Left" Margin="112.8,194.712,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" Click="Btn_Cosh_Click"/>
+        <Button x:Name="btn_arcSinh" Content="arcSinh (x)" HorizontalAlignment="Left" Margin="10,232.872,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" Click="Btn_arcSinh_Click"/>
+        <Button x:Name="btn_arcTanh" Content="arcTanh (x)" HorizontalAlignment="Left" Margin="112.8,232.872,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" Click="Btn_arcTanh_Click"/>
         <Button x:Name="btn_Exit" Content="Exit" HorizontalAlignment="Left" Margin="10,271.865,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" Click="Btn_Exit_Click"/>
         <Button x:Name="btn_Help" Content="Help" HorizontalAlignment="Left" Margin="112.8,271.865,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
         <TextBox x:Name="txt_X" HorizontalAlignment="Left" Height="23" Margin="32.077,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58.723" TabIndex="1"/>

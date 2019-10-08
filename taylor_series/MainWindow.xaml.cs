@@ -24,5 +24,65 @@ namespace taylor_series
         {
             InitializeComponent();
         }
+
+        private void Btn_Exit_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
+
+        private void Btn_Exp_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Btn_Pi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Btn_Sin_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Btn_Cos_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Btn_arcSin_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Btn_arcCos_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Btn_arcTan_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Btn_Sinh_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Btn_Cosh_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Btn_arcSinh_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Btn_arcTanh_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
