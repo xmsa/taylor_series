@@ -32,7 +32,33 @@ namespace taylor_series
 
         private void Btn_Exp_Click(object sender, RoutedEventArgs e)
         {
-            
+            double X = 0;
+            double N = 0;
+
+            bool x = get_value(txt_X, ref X);
+            bool n = get_value(txt_N, ref N);
+
+            if (x && n)
+            {
+
+                // sum(x^n)/n!
+                // a = (x^n)
+                // b = n!
+                // sum = a/b
+
+                double a = 1, b=1, sum=1;
+
+                for (int i = 1; i <= N; i++)
+                {
+                    a *= X;
+                    b *= i;
+                    sum += a / b;
+                }
+
+                MessageBox.Show(sum.ToString());
+
+            }
+
         }
 
         private void Btn_Pi_Click(object sender, RoutedEventArgs e)
@@ -96,7 +122,7 @@ namespace taylor_series
             catch (Exception)
             {
 
-                MessageBox.Show("Type Value Error ( " + txt.Name[4] + " )", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Type Value Error ( " + txt.Name[4] + " )", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return false;
             }
         }
