@@ -1,12 +1,36 @@
-﻿<Window x:Class="taylor_series.MainWindow"
+﻿<Window x:Name="frm_Main" x:Class="taylor_series.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:taylor_series"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="321.467" Width="223.6" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF9A76EB" Offset="0.077"/>
+            <GradientStop Color="#FF4F00FF" Offset="1"/>
+            <GradientStop Color="#FFF43BAA" Offset="0.555"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
-        
+        <Button x:Name="btn_Exp" Content="Exp(x)" HorizontalAlignment="Left" Margin="10,42.072,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" TabIndex="3" Click="Btn_Exp_Click"/>
+        <Button x:Name="btn_Pi" Content="Pi" HorizontalAlignment="Left" Margin="112.8,42.072,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" TabIndex="4" Click="Btn_Pi_Click"/>
+        <Button x:Name="btn_Sin" Content="Sin (x)" HorizontalAlignment="Left" Margin="10,80.232,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" TabIndex="5" Click="Btn_Sin_Click"/>
+        <Button x:Name="btn_Cos" Content="Cos (x)" HorizontalAlignment="Left" Margin="112.8,80.232,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" TabIndex="6" Click="Btn_Cos_Click"/>
+        <Button x:Name="btn_arcSin" Content="arcSin (x)" HorizontalAlignment="Left" Margin="10,118.392,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
+        <Button x:Name="btn_arcCos" Content="arcCos (x)" HorizontalAlignment="Left" Margin="112.8,118.392,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
+        <Button x:Name="btn_arcTan" Content="arcTan (x)" HorizontalAlignment="Left" Margin="10,156.552,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
+        <Button x:Name="btn_Sinh" Content="Sinh (x)" HorizontalAlignment="Left" Margin="10,194.712,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
+        <Button x:Name="btn_Cosh" Content="Cosh (x)" HorizontalAlignment="Left" Margin="112.8,194.712,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
+        <Button x:Name="btn_arcSinh" Content="arcSinh (x)" HorizontalAlignment="Left" Margin="10,232.872,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
+        <Button x:Name="btn_arcTanh" Content="arcTanh (x)" HorizontalAlignment="Left" Margin="112.8,232.872,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
+        <Button x:Name="btn_Exit" Content="Exit" HorizontalAlignment="Left" Margin="10,271.865,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16" Click="Btn_Exit_Click"/>
+        <Button x:Name="btn_Help" Content="Help" HorizontalAlignment="Left" Margin="112.8,271.865,0,0" VerticalAlignment="Top" Width="96" Background="#FF99FF00" Height="33.16"/>
+        <TextBox x:Name="txt_X" HorizontalAlignment="Left" Height="23" Margin="32.077,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58.723" TabIndex="1"/>
+        <TextBox x:Name="txt_N" HorizontalAlignment="Left" Height="23" Margin="128.667,8.96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56.156" TabIndex="1"/>
+        <Label Content="X" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top"/>
+        <Label Content="N" HorizontalAlignment="Left" Margin="189.823,7.04,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
