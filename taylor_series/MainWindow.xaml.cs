@@ -299,7 +299,29 @@ namespace taylor_series
 
         private void Btn_Cosh_Click(object sender, RoutedEventArgs e)
         {
+            double X = 0;
+            double N = 0;
+            bool x = get_value(txt_X, ref X);
+            bool n = get_value(txt_N, ref N);
+            if (x && n)
+            {
+                // sun ( x^(2n) / (2n)! )
+                // a = x^(2n)
+                // b = (2n)!
+                // sun (a/b) 
 
+                double a = 1, c = 1, b = 1, sum = 1;
+
+                for (int i = 1; i < N; i++)
+                {
+                    a *= X * X;
+                    b *= ((2 * i) * (2 * i - 1));
+                    sum += (a / b);
+                }
+
+                MessageBox.Show(sum.ToString());
+
+            }
         }
 
         private void Btn_arcSinh_Click(object sender, RoutedEventArgs e)
