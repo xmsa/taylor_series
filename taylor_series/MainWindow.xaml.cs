@@ -326,7 +326,45 @@ namespace taylor_series
 
         private void Btn_arcSinh_Click(object sender, RoutedEventArgs e)
         {
+            double X = 0;
+            double N = 0;
+            bool x = get_value(txt_X, ref X);
+            bool n = get_value(txt_N, ref N);
+            if (x && n)
+            {
+                if (-1 <= X && X <= 1)
+                {
+                    // sun ( (2n)! x^(2n+1) / 4^n (n!)^2 (2n+1) )
+                    // a = x^(2n+1)
+                    // b = (2n+1)
+                    // c = (2n)! 
+                    // d = 4^n
+                    // f = (n!)
+                    // j = f^2     ((n!)^2)
+                    // h = (-1)^n
+                    // sun ((h c a) / (d f b)) 
 
+                    double a = X, c = 1, b = 1, d = 1, j = 1, f = 1 , h = 1, sum = X;
+
+                    for (int i = 1; i <= N; i++)
+                    {
+                        a *= X * X;
+                        b += 2;
+                        c *= (2 * i - 1) * (2 * i);
+                        d *= 4;
+                        f *= i;
+                        j = f * f;
+                        h *= -1;
+                        sum += (a * c * h) / (d * b * j);
+                    }
+
+                    MessageBox.Show(sum.ToString());
+                }
+                else
+                {
+                    MessageBox.Show("The value of x must be |X| ≤ 1 ", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
         }
 
         private void Btn_arcTanh_Click(object sender, RoutedEventArgs e)
